@@ -1,11 +1,13 @@
 # Digital Differential Analyzer (DDA) & Bresenham Circle Algorithm (BCA)
-This repository contains implementations and explanations for the DDA line drawing algorithm and the Bresenham Circle Algorithm. Both these algorithms are integral in computer graphics to draw primitives.
+DDA and BCA algorithms are essential tools in the field of computer graphics, 
+offering different advantages for rendering lines and circles with varying degrees of complexity and precision. 
+The choice between them depends on the specific requirements of the graphics task at hand.
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [DDA Algorithm](#dda-algorithm)
 - [BCA Algorithm](#bca-algorithm)
-- [Usage](#usage)
+- [Example](#example)
 - [License](#license)
 - [Contribution](#contribution)
 
@@ -15,23 +17,36 @@ While there are various algorithms available, the DDA and Bresenham's are among 
 popular due to their efficiency.
 
 ## DDA Algorithm
-**Digital Differential Analyzer (DDA)** is an incremental scan-conversion method for rasterizing lines. 
-The key idea behind the DDA algorithm is to incrementally plot points on the line between the start and end points.
+> ### Description
+**Digital Differential Analyzer (DDA)** is a fundamental method in computer graphics used for rendering lines and other linear shapes on a digital screen. 
+It's a simple and straightforward approach for generating points along a line between two given coordinates. 
+The DDA Algorithm calculates each pixel's position along the line by incrementing the x and y coordinates in small steps.
 
 > ### Key Features
-- Floating point arithmetic makes it less efficient.
-- Rounding operations can lead to inaccuracies.
-- Simplicity makes it a good choice for hardware implementation.
+- **Simplicity**: DDA is easy to understand and implement, making it a great choice for beginners in computer graphics.
+- **Straight Lines**: It is primarily used for drawing straight lines but can be extended for drawing other shapes by connecting line segments.
+- **Efficiency**: DDA uses integer arithmetic and only requires additions and truncations, which makes it computationally efficient.
+
+> ### Applications
+The DDA algorithm is widely used in computer graphics, including rasterization of lines, generating digital images, and rendering vector graphics. 
+It serves as the foundation for many graphics primitives and is essential in rendering 2D and 3D graphics.
 
 ## BCA Algorithm
-**The Bresenham Circle Algorithm (BCA)** is an incremental circle generation algorithm which selects the nearest pixel position to complete the circle. 
-BCA uses only integer addition and subtraction along with a test to know where to plot the next pixel.
+> ### Description
+**The Bresenham Circle Algorithm (BCA)** Bresenham's Circle Algorithm (BCA) is a highly efficient method used for drawing circles on a pixel grid. 
+It was developed by Jack E. Bresenham and is an extension of Bresenham's line drawing algorithm. 
+BCA is particularly valuable for applications where performance is critical.
 
 > ### Key Features
-- More efficient than traditional methods like using the equation of the circle due to the use of integer arithmetic.
-- Produces a more accurate circle than the DDA algorithm.
+- **Efficiency**: BCA is known for its speed and efficiency because it relies solely on integer calculations, avoiding costly floating-point operations.
+- **Precision**: The algorithm produces highly accurate results, ensuring that each pixel plotted is as close as possible to the true circle.
+- **Symmetry**: BCA takes advantage of the symmetry of circles, reducing calculations to only one-eighth of the circle and mirroring the results to complete the circle.
 
-## Usage
+> ### Applications
+Bresenham's Circle Algorithm is commonly used in computer graphics, image processing, and games for rendering circles, curved shapes, and circular objects. 
+Its efficient and accurate nature makes it a preferred choice for graphics rendering when drawing circles or circular patterns.
+
+## Example
 ### DDA Example
 ```python
 # Import the Digital Differential Analyzer (DDA) module
