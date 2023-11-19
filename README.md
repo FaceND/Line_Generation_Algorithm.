@@ -8,8 +8,8 @@ The choice between them depends on the specific requirements of the graphics tas
 - [DDA Algorithm](#dda-algorithm)
 - [BCA Algorithm](#bca-algorithm)
 - [Example](#example)
-- [License](#license)
 - [Contribution](#contribution)
+- [License](#license)
 
 ## Introduction
 Drawing lines and circles are fundamental operations in computer graphics. 
@@ -78,8 +78,8 @@ BCA.drawCircle(radius, size=1000)
 - `center` (optional): The center coordinates of the circle. Defaults to the center of the image.
 - `size` (optional): The size of the image canvas. Defaults to 1000x1000 pixels.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contribution
 Feel free to fork this repository, make changes, and submit pull requests. Any contributions, no matter how minor, are greatly appreciated!
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
