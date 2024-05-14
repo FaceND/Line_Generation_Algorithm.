@@ -8,7 +8,7 @@ The choice between them depends on the specific requirements of the graphics tas
 - [DDA Algorithm](#dda-algorithm)
 - [BCA Algorithm](#bca-algorithm)
 - [Example](#example)
-- [Contribution](#contribution)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -78,7 +78,7 @@ BCA.drawCircle(radius, size=1000)
 - `center` (optional): The center coordinates of the circle. Defaults to the center of the image.
 - `size` (optional): The size of the image canvas. Defaults to 1000x1000 pixels.
 
-## Contribution
+## Contributing
 Feel free to fork this repository, make changes, and submit pull requests. Any contributions, no matter how minor, are greatly appreciated!
 
 ## License
